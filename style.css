@@ -1,0 +1,17 @@
+.row div {
+    border: 3px solid black;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    float: left;
+}
+.row {
+    clear: both;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
