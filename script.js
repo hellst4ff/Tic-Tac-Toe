@@ -2,7 +2,7 @@ var currentPlayer = "X";
 var won = false;
 
 function place(box) {
-    if (box.innerText != ""|| won) return;
+    if (box.innerText != "" || won) return;
     box.innerText = currentPlayer;
     currentPlayer == "X" ? currentPlayer = "O" : currentPlayer = "X";
     checkGameBoard()
@@ -34,9 +34,9 @@ function checkGameBoard() {
             document.getElementById('1_1').innerText,
             document.getElementById('0_2').innerText)
     }
-    function checkWinner(first, second, third) {
-        if (first != "" && first == second && first == third) {
-            alert('Winner')
-        }
+}
+function checkWinner(first, second, third) {
+    if (first != "" && first == second && first == third) {
+        alert('Winner')
     }
 }
